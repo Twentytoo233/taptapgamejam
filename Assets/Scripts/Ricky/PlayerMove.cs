@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Physics2D.queriesStartInColliders = false;
+        //Physics2D.queriesStartInColliders = false;
     }
 
     // Update is called once per frame

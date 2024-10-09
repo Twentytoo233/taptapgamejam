@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class RayCastTest : MonoBehaviour
 {
@@ -29,7 +26,11 @@ public class RayCastTest : MonoBehaviour
             //    Debug.Log("选中");
             //}
             RaycastHit2D hit = Physics2D.Raycast(pos, Vector3.forward);
-            if (hit && (hit.collider.gameObject.name == "Box" || hit.collider.gameObject.name == "Bridge"))
+            if (hit)
+            {
+                Debug.Log("233");
+            }
+            if (hit && hit.collider.gameObject.tag == "HeavyObject")
             {
                 obj = hit.collider.gameObject;
                 Debug.Log("选中");

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Twentytoo/TwentytooTest1.unity
+    guid: 075806709c1a57942a335e51254c1647
+  - enabled: 1
+    path: Assets/Scenes/Twentytoo/TwentytooTest2.unity
+    guid: d5a4555addee69a4b9ab34dca0d68de1
   m_configObjects: {}

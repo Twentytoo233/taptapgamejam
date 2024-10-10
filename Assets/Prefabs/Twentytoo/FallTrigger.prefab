@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1349849412470815650
+--- !u!1 &361821975713429567
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5139884939046393999}
-  - component: {fileID: 7335952111021290531}
-  - component: {fileID: 3554483673114546004}
-  - component: {fileID: 7280407926471004724}
+  - component: {fileID: 4189334148040226473}
+  - component: {fileID: 390481394224136592}
+  - component: {fileID: 8983856430023269457}
+  - component: {fileID: 7520713670546177963}
   m_Layer: 7
-  m_Name: GroundThorn
-  m_TagString: Untagged
+  m_Name: FallTrigger
+  m_TagString: FallTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5139884939046393999
+--- !u!4 &4189334148040226473
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349849412470815650}
+  m_GameObject: {fileID: 361821975713429567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.13, y: -2.23, z: 0}
-  m_LocalScale: {x: 9.29349, y: 4.934706, z: 1}
+  m_LocalPosition: {x: 6.410938, y: -2.4458869, z: 0}
+  m_LocalScale: {x: 9.62262, y: 4.0021453, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7335952111021290531
+--- !u!212 &390481394224136592
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349849412470815650}
+  m_GameObject: {fileID: 361821975713429567}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 718074e4e56a5404e824bf8e6571ea7d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.4433961, b: 0.4433961, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,13 +86,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3554483673114546004
+--- !u!61 &8983856430023269457
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349849412470815650}
+  m_GameObject: {fileID: 361821975713429567}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -115,7 +115,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -131,16 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &7280407926471004724
+--- !u!114 &7520713670546177963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349849412470815650}
+  m_GameObject: {fileID: 361821975713429567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 509de37e82c9945408a1d548e4ae37aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 49585877ee11b95408facfaa233563a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0

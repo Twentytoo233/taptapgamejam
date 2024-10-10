@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 6
-  jumpForce: 20
+  jumpForce: 10
   isGrounded: 0
   checkPoint: {fileID: 2520074378414040191}
   layerMask:

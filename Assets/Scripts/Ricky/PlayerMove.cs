@@ -13,8 +13,10 @@ public class PlayerMove : MonoBehaviour
     private float MoveH;
     [SerializeField]
     private bool isGrounded;
+    private bool canDoubleJump;
 
     public Transform checkPoint;
+    //public Transform checkHeadPoint;
     [SerializeField]
     public LayerMask layerMask;
     [SerializeField]
@@ -34,6 +36,7 @@ public class PlayerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //Physics2D.queriesStartInColliders = false;
+        canDoubleJump = false;
     }
 
     // Update is called once per frame
@@ -42,10 +45,15 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)&&isGrounded==true)
         {
             OnJump();
+            canDoubleJump = true;
             //播放动画
             //rb.velocity = Vector2.up * jumpForce;
         }
-
+        else if (Input.GetKeyDown(KeyCode.Space)&&canDoubleJump)
+        {
+            OnDoubleJump();
+            canDoubleJump = false;
+        }
         if (isGrounded)
         {
             MoveH = Input.GetAxis("Horizontal") * MoveSpeed;
@@ -87,6 +95,7 @@ public class PlayerMove : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(checkPoint.position, checkBoxSize);
+       // Gizmos.DrawWireCube(checkHeadPoint.position, checkBoxSize);
         Gizmos.color = Color.red;
     }
     private void Flip()
@@ -111,10 +120,15 @@ public class PlayerMove : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * shortJumpFactor * Time.deltaTime;
         }
     }
+
     private void OnJump()
     {
         rb.velocity = Vector2.up * jumpForce;
         //播放跳跃动画
+    }
+    private void OnDoubleJump()
+    {
+        rb.velocity = Vector2.up * jumpForce * 0.8f;
     }
     private void GetDaze()
     {

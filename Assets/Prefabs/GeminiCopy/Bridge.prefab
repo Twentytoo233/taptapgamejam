@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6973740787979686209}
   - component: {fileID: 3332612552059832076}
   - component: {fileID: 6210578121364033787}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bridge
   m_TagString: HeavyObject
   m_Icon: {fileID: 0}

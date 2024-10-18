@@ -434,10 +434,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
-    - target: {fileID: 4428408354100703794, guid: af01f4da672e33e4bbd47814b290c366, type: 3}
-      propertyPath: m_TagString
-      value: HeavyObject
-      objectReference: {fileID: 0}
     - target: {fileID: 5475161883064114054, guid: af01f4da672e33e4bbd47814b290c366, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.61
@@ -1078,10 +1074,6 @@ PrefabInstance:
     - target: {fileID: 4503745091888084850, guid: 50658528934b8a34ebc546c501d5a9f8, type: 3}
       propertyPath: m_Name
       value: Bridge
-      objectReference: {fileID: 0}
-    - target: {fileID: 4503745091888084850, guid: 50658528934b8a34ebc546c501d5a9f8, type: 3}
-      propertyPath: m_TagString
-      value: HeavyObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

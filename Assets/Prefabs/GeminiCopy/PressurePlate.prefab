@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 481122649174040704}
   - component: {fileID: 4982581954257345173}
   - component: {fileID: 2004778754343565757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PressurePlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}

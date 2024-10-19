@@ -18,9 +18,10 @@ public class StartPanel : BasePanel
     private void Start()
     {
         UIMgr.Instance.ShowPanel<StartPanel>();
-        GetControl<Button>("GameStart").onClick.AddListener(() =>
+        GetControl<Button>("StartButton").onClick.AddListener(() =>
         {
             //UIMgr.Instance.ShowPanel<MemoryPanel>();
+            UIMgr.Instance.ShowPanel<VideoPanel>();
 
         });
 

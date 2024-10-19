@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+    1.开机动画结束 显示面板
+    2.播放Dotween动画
+    3.结束 隐藏面板 显示视频播放面板
+ */
 public class MemoryPanel : BasePanel
 {
     

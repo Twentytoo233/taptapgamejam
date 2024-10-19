@@ -202,7 +202,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 6
+<<<<<<< HEAD
   jumpForce: 12
+=======
+  jumpForce: 15
+>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
   isGrounded: 0
   checkPoint: {fileID: 3503204930546980785}
   checkBoxSize: {x: 0.53, y: 0.01}
@@ -223,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 100
   spawnTime: 0
+<<<<<<< HEAD
 --- !u!114 &1759408874055506956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +246,9 @@ MonoBehaviour:
   jumpSpeed: 15
   isGround: 0
 --- !u!1 &4679032001084400185
+=======
+--- !u!1 &6538727392841488296
+>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

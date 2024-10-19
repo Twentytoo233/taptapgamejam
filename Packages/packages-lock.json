@@ -1,11 +1,14 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
     },
+=======
+>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
     "com.unity.burst": {
       "version": "1.8.11",
       "depth": 1,
@@ -14,6 +17,7 @@
         "com.unity.mathematics": "1.2.1"
       },
       "url": "https://packages.unity.cn"
+<<<<<<< HEAD
     },
     "com.unity.cinemachine": {
       "version": "2.9.7",
@@ -23,6 +27,8 @@
         "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.cn"
+=======
+>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
     },
     "com.unity.collab-proxy": {
       "version": "2.2.0",

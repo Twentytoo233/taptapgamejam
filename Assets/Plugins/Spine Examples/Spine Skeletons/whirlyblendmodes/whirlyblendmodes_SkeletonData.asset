@@ -22,13 +22,13 @@ MonoBehaviour:
     applyAdditiveMaterial: 1
     additiveMaterials:
     - pageName: whirlyblendmodes.png
-      material: {fileID: 2100000, guid: 867b647cef55dcb43928a83908d96007, type: 2}
+      material: {fileID: 2100000, guid: 634a30c4f85b43245a3cd0c0b4a7b16a, type: 2}
     multiplyMaterials:
     - pageName: whirlyblendmodes.png
-      material: {fileID: 2100000, guid: aa8b3fb015cd7eb438453da5e475ad54, type: 2}
+      material: {fileID: 2100000, guid: a641957d177a65345ab70cb937a75071, type: 2}
     screenMaterials:
     - pageName: whirlyblendmodes.png
-      material: {fileID: 2100000, guid: 1489a5bef834c9743bab2d5bd43168f1, type: 2}
+      material: {fileID: 2100000, guid: 653359d0f19f92d44af5a1d760dee86f, type: 2}
   skeletonDataModifiers: []
   fromAnimation: []
   toAnimation: []

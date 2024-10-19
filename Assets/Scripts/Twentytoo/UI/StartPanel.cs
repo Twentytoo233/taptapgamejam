@@ -5,19 +5,24 @@ using UnityEngine.UI;
 
 public class StartPanel : BasePanel
 {
-    
-    public override void HideMe()
-    {
-        gameObject.SetActive(false);
-    }
+    //public override void HideMe()
+    //{
+    //    gameObject.SetActive(false);
+    //}
 
-    public override void ShowMe()
-    {
-        gameObject.SetActive(true);
-    }
+    //public override void ShowMe()
+    //{
+    //    gameObject.SetActive(true);
+    //}
 
     private void Start()
     {
-        
+        UIMgr.Instance.ShowPanel<StartPanel>();
+        GetControl<Button>("GameStart").onClick.AddListener(() =>
+        {
+            //UIMgr.Instance.ShowPanel<MemoryPanel>();
+
+        });
+
     }
 }

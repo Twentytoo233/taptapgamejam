@@ -51,12 +51,22 @@ public abstract class BasePanel : MonoBehaviour
     /// <summary>
     /// 面板显示时调用的函数
     /// </summary>
-    public abstract void ShowMe();
+    //public abstract void ShowMe();
+    public virtual void ShowMe()
+    {
+        gameObject.SetActive(true);
+    }
+
 
     /// <summary>
     /// 面板隐藏时调用的函数
     /// </summary>
-    public abstract void HideMe();
+    //public abstract void HideMe();
+    public virtual void HideMe()
+    {
+        gameObject.SetActive(false);
+    }
+
 
     /// <summary>
     /// 获取指定名字以及指定类型的组件

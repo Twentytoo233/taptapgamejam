@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public abstract class BasePanel : MonoBehaviour
 {
+
     /// <summary>
     /// 用于存储所有要用到的UI控件 用里氏替换原则 UIBehaviour装载
     /// </summary>
@@ -50,12 +51,22 @@ public abstract class BasePanel : MonoBehaviour
     /// <summary>
     /// 面板显示时调用的函数
     /// </summary>
-    public abstract void ShowMe();
+    //public abstract void ShowMe();
+    public virtual void ShowMe()
+    {
+        gameObject.SetActive(true);
+    }
+
 
     /// <summary>
     /// 面板隐藏时调用的函数
     /// </summary>
-    public abstract void HideMe();
+    //public abstract void HideMe();
+    public virtual void HideMe()
+    {
+        gameObject.SetActive(false);
+    }
+
 
     /// <summary>
     /// 获取指定名字以及指定类型的组件

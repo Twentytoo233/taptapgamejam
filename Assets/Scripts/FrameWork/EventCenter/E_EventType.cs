@@ -7,6 +7,4 @@ public enum E_EventType
     /// 场景切换时进度获取
     /// </summary>
     E_SceneLoadChange,
-
-    
 }

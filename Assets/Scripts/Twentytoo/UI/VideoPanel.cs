@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class VideoPanel : BasePanel
 {
     /*
-     1.按下开始游戏按钮时 显示VideoPanel面板
+     1.按下开始游戏按钮时 显示VideoPanel面板 隐藏开始面板
     2.播放视频 5秒后结束 隐藏面板
     3.等待回忆动画播放完毕 显示面板
      */
@@ -30,6 +30,7 @@ public class VideoPanel : BasePanel
     {
         if (IsPlay)
         {
+            UIMgr.Instance.HidePanel<StartPanel>();
             turnOn.Play();
             currentTime += Time.deltaTime;
         }
@@ -38,7 +39,10 @@ public class VideoPanel : BasePanel
         {
             //视频播放结束
             IsPlay = false;
+            //关闭视频面板
             UIMgr.Instance.HidePanel<VideoPanel>();
+            //打开记忆面板
+            UIMgr.Instance.ShowPanel<MemoryPanel>();
         }
 
     }

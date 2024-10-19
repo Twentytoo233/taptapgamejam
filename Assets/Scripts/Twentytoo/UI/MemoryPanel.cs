@@ -27,10 +27,7 @@ public class MemoryPanel : BasePanel
     // Start is called before the first frame update
     void Start()
     {
-        //GetControl<Button>("GameStart").onClick.AddListener(() =>
-        //{
-        //    UIMgr.Instance.ShowPanel<MemoryPanel>();
-        //});
+        
 
     }
 

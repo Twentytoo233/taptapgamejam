@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public abstract class BasePanel : MonoBehaviour
 {
+    
+
     /// <summary>
     /// 用于存储所有要用到的UI控件 用里氏替换原则 UIBehaviour装载
     /// </summary>

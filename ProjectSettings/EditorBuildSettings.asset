@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Twentytoo/TwentytooTest1.unity
-    guid: 075806709c1a57942a335e51254c1647
+    path: Assets/Scenes/Chapter_0/StartScreen.unity
+    guid: 37354e4264bde3d4c88d632450df047f
   - enabled: 1
-    path: Assets/Scenes/Twentytoo/TwentytooTest2.unity
-    guid: d5a4555addee69a4b9ab34dca0d68de1
+    path: Assets/Scenes/Chapter_0/SceneL0.unity
+    guid: d62243df2638e2b4d930c73d9a9c1252
   - enabled: 1
     path: Assets/Scenes/Chapter_0/SceneL0_02.unity
     guid: 350f9a553d0ba2f4988a3429ed15d800

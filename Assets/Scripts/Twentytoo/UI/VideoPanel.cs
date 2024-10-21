@@ -1,50 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class VideoPanel : BasePanel
 {
     /*
      1.按下开始游戏按钮时 显示VideoPanel面板 隐藏开始面板
-    2.播放视频 5秒后结束 隐藏面板
+    2.播放视频0 5秒后结束 隐藏面板
     3.等待回忆动画播放完毕 显示面板
+    4.播放视频0 5秒后结束 隐藏面板
      */
-    public VideoPlayer turnOn;
-    public VideoPlayer turnOff;
-    public GameObject videoImage1;//播放image
-    public GameObject videoImage2;
-    private bool IsPlay = true;
 
-    private double videoTime, currentTime;
+    private RawImage turnOn;
+    private RawImage turnOff;
+
+    public override void HideMe()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public override void ShowMe()
+    {
+        gameObject.SetActive(true);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        videoTime = 5f;
-        turnOn = videoImage1.GetComponent<VideoPlayer>();
-        turnOff = videoImage2.GetComponent<VideoPlayer>();
+        //获取UI控件 TurnOn
+        turnOn = GetControl<RawImage>("TurnOn");
+        //获取UI控件 TurnOff
+        turnOff = GetControl<RawImage>("TurnOff");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsPlay)
-        {
-            UIMgr.Instance.HidePanel<StartPanel>();
-            turnOn.Play();
-            currentTime += Time.deltaTime;
-        }
 
-        if (currentTime >= videoTime)
-        {
-            //视频播放结束
-            IsPlay = false;
-            //关闭视频面板
-            UIMgr.Instance.HidePanel<VideoPanel>();
-            //打开记忆面板
-            UIMgr.Instance.ShowPanel<MemoryPanel>();
-        }
-
+        ShowMe();
+        //播放开机视频
+        
     }
 
 }

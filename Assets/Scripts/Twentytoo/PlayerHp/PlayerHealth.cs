@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
-<<<<<<< HEAD
-=======
-{
-    public int playerHealth = 100;
->>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
+//<<<<<<< HEAD
+//=======
+//{
+//    public int playerHealth = 100;
+//>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
 
 {
     public float spawnTime;
@@ -29,13 +29,13 @@ public class PlayerHealth : MonoBehaviour
     {
         
     }
-<<<<<<< HEAD
-=======
-    public void DamagePlayer(int damage)
-    {
-        playerHealth -= damage;   
-    }
->>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
+//<<<<<<< HEAD
+//=======
+//    public void DamagePlayer(int damage)
+//    {
+//        playerHealth -= damage;   
+//    }
+//>>>>>>> parent of ae8945e (Merge branch 'master' of https://github.com/Twentytoo233/taptapgamejam)
     //‘› ±–¥’‚
     public void SetSpawnPoint(Vector2 spawnPoint)
     {

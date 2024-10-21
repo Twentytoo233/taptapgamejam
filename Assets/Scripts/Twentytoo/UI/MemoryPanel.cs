@@ -77,18 +77,6 @@ public class MemoryPanel : BasePanel
         sequence.Join(showImg2.DOFade(1, 8));
 
         sequence.AppendInterval(1f);//延迟2秒后播放后面动画
-
-        ////添加同时播放的动画3和动画4，原理同上
-        //sequence.Append(showImg2.DOFade(0, 5).OnComplete(() =>
-        //{
-        //    ChangeSprite(showImg2);
-        //    //Debug.Log("图片二精灵图替换为：" + (imgCount + 1));
-        //}));
-        //sequence.Join(showImg.material.DOFade(1, 5));
-
-        //sequence.AppendInterval(1);
-        //sequence.SetLoops(-1);//参数为-1表示设置动画为无限循环，就形成了一个幻灯片播放效果了
-        //StopSildeShow();
     }
     private void ChangeSprite(Image img)
     {

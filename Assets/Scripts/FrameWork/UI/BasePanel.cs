@@ -51,21 +51,15 @@ public abstract class BasePanel : MonoBehaviour
     /// <summary>
     /// 面板显示时调用的函数
     /// </summary>
-    //public abstract void ShowMe();
-    public virtual void ShowMe()
-    {
-        gameObject.SetActive(true);
-    }
+    public abstract void ShowMe();
+    
 
 
     /// <summary>
     /// 面板隐藏时调用的函数
     /// </summary>
-    //public abstract void HideMe();
-    public virtual void HideMe()
-    {
-        gameObject.SetActive(false);
-    }
+    public abstract void HideMe();
+    
 
 
     /// <summary>
